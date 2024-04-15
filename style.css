@@ -29,7 +29,6 @@ body{
     background-color: #ffffff3e;
     color: #fff;
     border-radius: 25px;
-    padding: 10px 20px;
   }
   
   /* HEADER ACTIVE */
@@ -76,6 +75,59 @@ body{
     transform: translate(-50%, -50%);
     color: white;
   }
+
+/* CONTENT BLOCK 1 */
+
+
+.grid-container {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: auto auto auto;
+  grid-auto-flow: column; 
+  padding: 10px;
+
+}
+
+.grid-item {
+  max-width: 720px;
+  max-height: 600px;
+  background-color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  align-content: center;  
+}
+
+.grid-image{
+  max-width: 720px;
+  max-height: 600px;
+}
+
+h3{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+button{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: #fff1c0;
+  border-radius: 20px;
+  color: #000;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
