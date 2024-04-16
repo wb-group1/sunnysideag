@@ -9,7 +9,7 @@ body{
     padding: 20px 10px;
     background-image: url(img/desktop/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   
   
@@ -79,28 +79,44 @@ body{
 /* CONTENT BLOCK 1 */
 
 
-.grid-container {
-  display: grid;
-  justify-content: flex-start;
-  grid-template-columns: auto auto auto;
-  grid-auto-flow: column; 
-  padding: 10px;
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  background-color:#fff;
+  height: 580px;
+}
+
+.column-cont{
+  margin-top: 20%;
+  padding: 60px;
+  width: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.grid-img{
   width: 100%;
 }
 
-.grid-item {
-  max-width: 720px;
-  max-height: 600px;
-  background-color: #fff;
-  padding: 20px;
-  font-size: 18px;
-  align-content: center;  
-}
+.over-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.grid-image{
-  max-width: 720px;
-  max-height: 600px;
-}
 
 h3{
   font-family: "Times New Roman", Times, serif;
@@ -196,3 +212,11 @@ footer{
       float: none;
     }
   } 
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  
+}
