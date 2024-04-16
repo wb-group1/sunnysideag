@@ -1,5 +1,8 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: "Barlow", sans-serif;
+  
+  font-style: normal;
+  font-size: 18px;
 
 }
 /* HEADER BACKGROUND */
@@ -37,7 +40,7 @@ body{
     color: #000;
     border-radius: 25px;
     padding: 10px 20px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Fraunces", serif;
     font-weight: bold;
     
   }
@@ -58,8 +61,8 @@ body{
     top: 30%;
     left: 50%;
     font-size: 30px; 
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
     letter-spacing: 10px;
     transform: translate(-50%, -50%);
     color: white;
@@ -85,6 +88,7 @@ body{
 
 /* Create two equal columns that floats next to each other */
 .column {
+  position: relative;
   float: left;
   width: 50%;
   padding: 0px;
@@ -111,29 +115,35 @@ body{
 }
 
 .over-img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  padding: 10px 20px; 
+  margin-top: 20%;
+  font-size: 20px; 
+  text-align: center;
   }
 
 
 h3{
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
   font-size: 36px;
   color: #1e2d40;
 }
 
 p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   color: #86858d;
 }
 
 button{
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Fraunces", serif;
   font-weight: bold;
   background-color: #fff1c0;
   border-radius: 20px;
