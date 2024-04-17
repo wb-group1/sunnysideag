@@ -15,6 +15,7 @@ body{
   }
   
   
+  
   .header a {
     float: left;
     color: #fff;
@@ -132,6 +133,34 @@ body{
   text-align: center;
   }
 
+  .testimonials {
+    border-radius: 50%;
+  }
+  
+  .test-row {
+    display: flex;
+    width: auto;
+    border: 1px;
+    border-color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-style: solid;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 150px;
+  }
+  
+  .test-cont {
+    font-display: bold;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
 
 h3{
   font-family: "Fraunces", serif;
@@ -141,6 +170,72 @@ h3{
   font-size: 36px;
   color: #1e2d40;
 }
+
+.test-title{
+  margin-top: 10%;
+  color: #a5a9ac;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.test-name{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: #252932;
+}
+
+.test-job{
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a9a9a9;
+}
+
+.test-text{
+  line-height: 1.8;
+}
+
+
+
+/*  GALLERY START  */
+
+.gallery {
+  margin: 0;
+  margin-bottom: -4px;
+  padding: 0;
+}
+
+/*
+
+.gal-column {
+   width: 150%;
+  flex: 25%; 
+}
+*/
+
+.gal-column img {
+  margin-top: 5px;
+  max-width: 100%;
+}
+
+.gal-row {
+  /* display: flex;
+  padding: 5px;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+
+
+
+/*  GALLERY END  */
+
+
+
 
 p{
   font-family: "Barlow", sans-serif;
@@ -213,6 +308,10 @@ footer{
   align-content: center;
 }
 
+
+
+
+
 .footer-logo{
   margin-top: 50px;
   padding: 10px;
@@ -221,7 +320,12 @@ footer{
   margin-right: auto;
   width: 170px;
   fill: #2b7264;
+  text-align: center;
 
+}
+
+.footer-logo:hover {
+  fill: #fff;
 }
 
 .footer-nav{
@@ -238,6 +342,7 @@ footer{
     color: #fff;
   }
 
+  
 .socials{
   text-align: center;
   margin-top: 60px;
@@ -245,7 +350,14 @@ footer{
 }
 
 .social-icon{
+  fill: #2b7264;
   margin-left: 20px;
+
+}
+
+.social-icon:hover{
+  fill: #fff;
+
 }
 
 
