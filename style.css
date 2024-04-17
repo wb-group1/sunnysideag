@@ -1,6 +1,5 @@
 body{
   font-family: "Barlow", sans-serif;
-  
   font-style: normal;
   font-size: 18px;
 
@@ -87,6 +86,12 @@ body{
 }
 
 /* Create two equal columns that floats next to each other */
+
+.text-box{
+  width: 68%;
+
+}
+
 .column {
   position: relative;
   float: left;
@@ -97,7 +102,7 @@ body{
 }
 
 .column-cont{
-  margin-top: 20%;
+  margin-top: 10%;
   padding: 60px;
   width: auto;
 }
