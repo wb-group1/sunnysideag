@@ -27,19 +27,20 @@
             <img src="img/logo.svg" class="nav__logo" alt="Sunnyside logo" />
           </figure>
 
-          <div class="nav__links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contacts</a>
+          <div class="nav__links" id="open">
+            <a class="nav__link1" href="#about">About</a>
+            <a class="nav__link1" href="#services">Services</a>
+            <a class="nav__link1" href="#projects">Projects</a>
+            <a class="nav__link1--cta" href="#contact">Contact</a>
           </div>
-          <figure class="nav__hamburguer">
+
+          <a href="#open" class="nav__hamburguer">
             <img src="img/icon-hamburger.svg" class="nav_icon" />
-          </figure>
+          </a>
         </div>
       </nav>
 
-      <section class="hero__main"></section>
+      <!-- <section class="hero__main"></section> -->
 
       <section class="hero-image">
         <h1 class="hero-title">WE ARE CREATIVES</h1>
@@ -57,51 +58,57 @@
     <!-- BLOCK 1 START -->
 
     <!-- <section id="content-block1"> -->
+
     <figure class="figure__hero1">
       <img
         class="figure__hero1"
-        src="img/desktop/image-transform.jpg"
+        src="img/mobile/image-transform.jpg"
         alt="Egg Image"
       />
     </figure>
     <!-- </section> -->
 
-    <section class="parragraph__egg">
+    <section class="container__egg">
       <div>
-        <h3>Transform your brand</h3>
-        <p>
+        <h3 class="c__egg_title">Transform your brand</h3>
+        <p class="c__egg_parag">
           We are a full-service creative agency specializing in nelping branas
           grow tast. chgage your chents tnrough compelling visuals that do most
           of the marketing for you.
         </p>
       </div>
-      <button type="button">Learn More</button>
+      <button class="c__egg_btn" type="button">Learn More</button>
     </section>
 
     <!-- BLOCK 1 END -->
 
     <!-- BLOCK 2 START -->
 
-    <section id="content-block2">
+    <figure class="figure__glass">
+      <img
+        class="figure__glass"
+        src="img/mobile/image-stand-out.jpg"
+        alt="Red Glass Image"
+      />
+    </figure>
+
+    <section class="container__glass">
       <div>
-        <img src="img/desktop/image-stand-out.jpg" alt="Red Glass Image" />
-      </div>
-      <div>
-        <h3>Stand out to the right audience</h3>
-        <p>
+        <h3 class="c__glass_title">Stand out to the right audience</h3>
+        <p class="c__glass_parag">
           Using a collaborative formula of designers, researchers,
           photographers, videograpners, and copywriters, we'll build and extend
           your brand In aigital places.
         </p>
-        <button type="button">Learn More</button>
       </div>
+      <button class="c__glass_btn" type="button">Learn More</button>
     </section>
 
     <!-- BLOCK 2 END -->
 
     <!-- BLOCK 3 START -->
 
-    <section id="content-block3">
+    <section class="container__cherry" id="content-block3">
       <div class="gd-container">
         <img
           src="img/desktop/image-graphic-design.jpg"
@@ -117,19 +124,16 @@
           </p>
         </div>
       </div>
+    </section>
 
+    <section>
       <div class="photo-container">
-        <img
-          src="img/desktop/image-photography.jpg"
-          alt="Graphic design image"
-        />
+        <img src="img/desktop/image-photography.jpg" alt="Orangine" />
         <div class="centered">
-          <h1>Graphic Design</h1>
+          <h1>Photography</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A vero
-            mollitia ullam deserunt labore excepturi earum voluptatibus nam
-            sequi cumque esse, recusandae, maxime dolorem officiis explicabo
-            tenetur doloremque et? Delectus?
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
           </p>
         </div>
       </div>
@@ -139,65 +143,84 @@
 
     <!-- TESTIMONIALS START -->
 
-    <section id="testimonials">
-      <div class="test-1">
-        <img src="img/image-emily.jpg" alt="Avatar" style="width: 90px" />
-        <p>
-          We out our trust in Sunnvside and they delivered, making sure our
-          needs were met and deadlines were always hit.
-        </p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
-      </div>
+    <section class="container__testimonials" id="testimonials">
+      <h1 class="c_testim_title">CLIENT TESTIMONIALS</h1>
+      <div class="texts__testim">
+        <article class="c_testim_1">
+          <img
+            class="c_testim_img"
+            src="img/image-emily.jpg"
+            alt="Avatar"
+            style="width: 90px"
+          />
 
-      <div class="test-2">
-        <img src="img/image-jennie.jpg" alt="Avatar" style="width: 90px" />
-        <p>
-          We out our trust in Sunnvside and they delivered, making sure our
-          needs were met and deadlines were always hit.
-        </p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
-      </div>
+          <p class="c_testim_pgp">
+            We out our trust in Sunnvside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h3 class="c_testim_sign">Emily R.</h3>
+          <h4 class="c_testim_occup">Marketing Director</h4>
+        </article>
 
-      <div class="test-3">
-        <img src="img/image-thomas.jpg" alt="Avatar" style="width: 90px" />
-        <p>
-          We out our trust in Sunnvside and they delivered, making sure our
-          needs were met and deadlines were always hit.
-        </p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
+        <article class="c_testim_2">
+          <img
+            class="c_testim_img"
+            src="img/image-jennie.jpg"
+            alt="Avatar"
+            style="width: 90px"
+          />
+          <p class="c_testim_pgp">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h3 class="c_testim_sign">Thomas S.</h3>
+          <h4 class="c_testim_occup">Chief Operating Officer</h4>
+        </article>
+
+        <article class="c_testim_3">
+          <img
+            class="c_testim_img"
+            src="img/image-thomas.jpg"
+            alt="Avatar"
+            style="width: 90px"
+          />
+          <p class="c_testim_pgp">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h3 class="c_testim_sign">Jennie F.</h3>
+          <h4 class="c_testim_occup">Business Owner</h4>
+        </article>
       </div>
     </section>
 
     <!-- TESTIMONIALS END -->
 
     <!-- GALLERY START -->
-    <section>
-      <div class="row">
-        <div class="column">
-          <img
-            src="img/desktop/image-gallery-milkbottles.jpg"
-            alt="Milk bottles image"
-          />
-        </div>
+    <section class="galleryphotos">
+      <img
+        class="galleryphotos_img"
+        src="img/desktop/image-gallery-milkbottles.jpg"
+        alt="Milk bottles image"
+      />
 
-        <div class="column">
-          <img src="img/desktop/image-gallery-orange.jpg" alt="Orange image" />
-        </div>
+      <img
+        class="galleryphotos_img"
+        src="img/desktop/image-gallery-orange.jpg"
+        alt="Orange image"
+      />
 
-        <div class="column">
-          <img src="img/desktop/image-gallery-cone.jpg" alt="Cone image" />
-        </div>
+      <img
+        class="galleryphotos_img"
+        src="img/desktop/image-gallery-cone.jpg"
+        alt="Cone image"
+      />
 
-        <div class="column">
-          <img
-            src="img/desktop/image-gallery-sugarcubes.jpg"
-            alt="Sugar cubes image"
-          />
-        </div>
-      </div>
+      <img
+        class="galleryphotos_img"
+        src="img/desktop/image-gallery-sugarcubes.jpg"
+        alt="Sugar cubes image"
+      />
     </section>
     <!-- GALLERY END -->
 
@@ -205,18 +228,51 @@
 
     <!-- FOOTER START -->
 
-    <footer>
-      <ul class="footer-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+    <footer class="footer">
+      <section class="footer__navigation">
+        <figure class="nav__figure-footer">
+          <img src="img/logo.svg" class="nav__logo" alt="Sunnyside logo" />
+        </figure>
 
-      <div class="socials">
-        <img src="img/icon-facebook.svg" alt="social-facebook" />
-        <img src="img/icon-instagram.svg" alt="social-insta" />
-        <img src="img/icon-twitter.svg" alt="social-twitter" />
-        <img src="img/icon-pinterest.svg" alt="social-pinterest" />
+        <nav class="footer-nav">
+          <a class="footer-link" href="#about">About</a>
+          <a class="footer-link" href="#services">Services</a>
+          <a class="footer-link" href="#projects">Projects</a>
+        </nav>
+      </section>
+
+      <div class="footer__media">
+        <a href="" class="footer__socials">
+          <img
+            class="footer__icon"
+            src="img/icon-facebook.svg"
+            alt="social-facebook"
+          />
+        </a>
+
+        <a href="" class="footer__socials">
+          <img
+            class="footer__icon"
+            src="img/icon-instagram.svg"
+            alt="social-insta"
+          />
+        </a>
+
+        <a href="" class="footer__socials">
+          <img
+            class="footer__icon"
+            src="img/icon-twitter.svg"
+            alt="social-twitter"
+          />
+        </a>
+
+        <a href="" class="footer__socials">
+          <img
+            class="footer__icon"
+            src="img/icon-pinterest.svg"
+            alt="social-pinterest"
+          />
+        </a>
       </div>
     </footer>
 
